@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Rather lose for what I am than win for what I ain't. Contact:lisa20090127@gmail.com 
+subtitle: Contact:lisa20090127@gmail.com 
 
 profile:
   align: right
@@ -19,7 +19,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Yishu Li, a senior undergraduate student at Computer Science and Technology Department in Tsinghua University. My general research interest lies in the intersection of robotics and computer vision. Specifically, I'm interested in multimodality (multiple input modality / multiple mode distribution) and generalization. 
+Hi! I'm Yishu Li, a senior undergraduate student at Computer Science and Technology Department in Tsinghua University. 
+
+My general research interest lies in the intersection of robotics and computer vision. Specifically, I'm interested in multimodality (multiple input modality / multiple mode distribution) and generalization. 
 
 I had the priviledge of working with Professor [Li Yi](https://ericyi.github.io) on hand-object interaction understanding, and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) on 3D vision at Tsinghua University. I also had a wonderful time carrying out summer research in [R-Pad Lab](https://r-pad.github.io) in CMU RI, focused on handling multimodal motion planning with diffusion, guided by Professor [David Held](http://davheld.github.io) and [Ben Eisner](https://beisner.me).
 
