@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: My research projects and work experiences.
 nav: true
-nav_order: 2
+nav_order: 1
 display_categories: [Research, Work, Course]
 horizontal: false
 ---
