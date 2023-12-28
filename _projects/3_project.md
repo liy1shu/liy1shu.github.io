@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: 3D Scene Reconstruct
+short_title: 3D Scene Recon
 title: Joint 3D Reconstruction of Semantic and Geometry
 description: Tsinghua University
 img: assets/img/3drecon.jpeg
