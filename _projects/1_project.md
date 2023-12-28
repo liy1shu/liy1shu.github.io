@@ -3,11 +3,12 @@ layout: page
 short_title: Motion Planning
 title: Solving Multimodal Open Action Planning With Diffusion
 description: CMU Robotics Institute
-advisor: David Held, Associate Professor at Robotics Institute, Carnegie Mellon University
 img: assets/img/task.jpeg
 importance: 1
 category: Research
 ---
+
+Advisor: [David Held](http://davheld.github.io), <i>Associate Professor at Robotics Institute, Carnegie Mellon University</i>
 
 Investigated on planning to open objects from pure RGB-D observations with diffusion models. Use diffusion model to better represent ambiguity and multimodal action space. Disambiguous diffusion results with history-conditioned structure to predict correct and temporally consistent results.
 

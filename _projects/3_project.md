@@ -3,11 +3,12 @@ layout: page
 short_title: 3D Scene Reconstruction
 title: Joint 3D Reconstruction of Semantic and Geometry
 description: Tsinghua University
-advisor: Yongjin Liu, Professor at Department of Computer Science and Technology, Tsinghua University
-img: assets/img/3drecon.jpg
+img: assets/img/3drecon.jpeg
 importance: 3
 category: Research
 ---
+
+Advisor: [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm), <i>Professor at Department of Computer Science and Technology, Tsinghua University</i>
 
 Built an end-to-end network that jointly reconstructs 3D geometry and semantics under multi-view settings. We came up with a new coarse-to-fine method that iteratively optimizes the ray depth prediction and the 3D feature space, as predicted ray depths could pose constraints to 2D-to-3D feature projection and more precise 3D feature spaces can be processed into more accurate ray depths. Using this two-way approach, we were able to explicitly fuse visual and semantic information and finally came up with more accurate reconstruction results than previous models.
 
@@ -18,7 +19,7 @@ Built an end-to-end network that jointly reconstructs 3D geometry and semantics 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3drecon.jpg" title="Reconstruction Example" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/3drecon.jpeg" title="Reconstruction Example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

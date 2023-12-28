@@ -3,12 +3,13 @@ layout: page
 short_title: MMGC Contest Developer
 title: 2022 MMGC Contest Organizer and Developer
 description: Tsinghua University
-advisor: Yong Cui, Professor at Department of Computer Science and Technology, Tsinghua University
 img: assets/img/stream_simulator.jpeg
 importance: 4
 category: Work
 related_publications: zuo2022bandwidthefficient
 ---
+
+Advisor: [Yong Cui](http://www.cuiyong.net/index.html), <i>Professor at Department of Computer Science and Technology, Tsinghua University</i>
 
 Applications that allow sharing of user-created short videos exploded in popularity in recent years. Solutions to reduce bandwidth waste without impairing the Quality of Experience (QoE) are needed. Solving the problem requires adaptively prefetching of short video chunks, which is challenging as the download strategy needs to match unknown user viewing behavior and network conditions. 
 

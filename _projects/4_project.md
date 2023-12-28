@@ -3,11 +3,12 @@ layout: page
 short_title: Indoor Camera Development
 title: Google Nest Camera Development Software Engineer
 description: NEST, Google
-advisor: Ruqin Huang, Jingwei Guo, Google SHA
 img: assets/img/seatcard.jpeg
 importance: 3
 category: Work
 ---
+
+Advisor: Ruqin Huang, Jingwei Guo, Google SHA
 
 Completed my Software Engineering Internship (STEP) at Google, Shanghai in July 2023 - September 2023 under NEST team. My internship mainly focused on helping to develop the software end of indoor camera's communication, including building the pipline of sending dataflows and maintaining buffers to the cloud end, and also building the real-time statistics tools of daily data streams.
 

@@ -3,11 +3,12 @@ layout: page
 short_title: 6D Pose Estimation
 title: 6D Object Pose Estimation (Course Project)
 description: <3D Visual Computing>, Tsinghua University
-advisor: Li Yi, Assistant Professor at Institute of Interdisciplinary Information Science, Tsinghua University
 img: assets/img/icp.jpeg
 importance: 4
 category: Course
 ---
+
+Advisor: [Li Yi](https://ericyi.github.io), <i>Assistant Professor at Institute of Interdisciplinary Information Science, Tsinghua University</i>
 
 Completed the 6D pose estimation of objects given the observed point cloud and an initial position point cloud with both analytical method and learning method. The observations may have occlusions and deficiencies. 
 
