@@ -1,5 +1,6 @@
 ---
 layout: page
+short_title: Multimodal Motion Planning
 title: Solving Multimodal Open Action Planning With Diffusion
 description: CMU Robotics Institute
 img: assets/img/12.jpg

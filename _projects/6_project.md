@@ -1,5 +1,6 @@
 ---
 layout: page
+short_title: 6D Pose Estimation
 title: 6D Object Pose Estimation (Course Project)
 description: <3D Visual Computing>, Tsinghua University
 img: 

@@ -1,5 +1,6 @@
 ---
 layout: page
+short_title: MMGC Contest Developer
 title: 2022 MMGC Contest Organizer and Developer
 description: Tsinghua University
 img: assets/img/1.jpg

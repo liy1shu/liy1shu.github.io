@@ -1,5 +1,6 @@
 ---
 layout: page
+short_title: 3D Reconstruction
 title: Joint 3D Reconstruction of Semantic and Geometry
 description: Tsinghua University
 img: assets/img/7.jpg
