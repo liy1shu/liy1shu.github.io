@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: My research projects and work experiences.
+description: My undergraduate experiences, categorized into research projects, work experiences and course projects.
 nav: true
 nav_order: 1
 display_categories: [Research, Work, Course]
