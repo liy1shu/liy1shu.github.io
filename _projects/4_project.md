@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: Camera Software Development
+short_title: Home Camera Development
 title: Google Nest Camera Development Software Engineer
 description: NEST, Google
 img:

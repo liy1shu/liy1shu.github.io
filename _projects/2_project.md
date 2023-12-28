@@ -3,80 +3,34 @@ layout: page
 short_title: HOI Video Understanding
 title: Generalizable Spatio-Temporal Grounding in Hand-Object-Interaction Videos
 description: Tsinghua University
-img: assets/img/3.jpg
+img: assets/img/hoi_task.jpeg
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Investigated on building an end-to-end spatio-temporal HOI video grounding and it's generalization ability to new actions, new objects and new compositions. Design intermediate representation to guide the finetuning process pretrained general vision-language models, making the model focus more on the essence of the active interaction part and distill more generalizable features. To validate the comparison on generalization, we carefully split the dataset into 4 training sets and 1 test set. Except the in-dataset training set, the other 3 training sets all hold specific domain gaps with the test set: unseen objects, unseen actions and unseen compositions of seen nouns and verbs. Our methods have shown generalization ability across different settings.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- Built a pipeline capable of spatio-temporal segmentation given an input video and a verb-noun interaction
+query that can distinguish the interactive instance from background objects.
+- Defined an intermediate representation to bridge spatial and temporal segmentation and encouraged utilizing
+the hand and object relationship to achieve better generalizability.
+- Designed a set of generalization tests using a carefully split dataset and conducted generalization
+comprehensive testing on our new method and various existing methods.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/toycar.jpeg" title="toycar spatial example" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/chair.jpeg" title="chair spatial example" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/cups.jpeg" title="cups spatial example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Spatial segmentation visualizations. Yellow means higher probability of being classified to the interactive part.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Temporal results are produced but visualizations aren't ready yet. On the method part, we are currently still working on improvements on the overall structure or detailed intermediate representation designs that might yield better generalization abilities.

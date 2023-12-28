@@ -1,20 +1,14 @@
 ---
 layout: page
-short_title: Multimodal Motion Planning
+short_title: Motion Planning
 title: Solving Multimodal Open Action Planning With Diffusion
 description: CMU Robotics Institute
-img: assets/img/12.jpg
+img: assets/img/task.jpeg
 importance: 1
 category: work
 ---
 
 Investigated on planning to open objects from pure RGB-D observations with diffusion models. Use diffusion model to better represent ambiguity and multimodal action space. Disambiguous diffusion results with history-conditioned structure to predict correct and temporally consistent results.
-
-While regression models have shown great potential in solving these problems, they have difficulties handling ambiguous datasets. For example, doors with similar geometries could yield different open directions (e.g. push and pull) which is confusing even to humans. If trained on door datasets with similar geometry but various open directions, regression models could easily fail to converge. Unlike traditional regression models, diffusion models are good at fitting multi-modal distributions. With manually selected ambiguous datasets, we have shown that diffusion-based methods are capable of preserving multiple possible solutions and have notably outperformed regression methods by a large margin. Currently, we are working on combining this multi-modal predictor with history- and feedback-aware planner to disambiguate the predicted possible actions.
-
-- Developed a generalizable algorithm which plans the ‘open’ action from a pure, single-view RGB observation.
-- Built a simulation environment that can handle simulating manipulation on objects using a suction gripper.
-- Utilized diffusion models to better address ambiguity issues in articulative objects.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -30,6 +24,12 @@ While regression models have shown great potential in solving these problems, th
 <div class="caption">
     On the left, the real-world task examples. Middle, predicted action flow definition. Right, simulation environment in pybullet.
 </div>
+
+While regression models have shown great potential in solving these problems, they have difficulties handling ambiguous datasets. For example, doors with similar geometries could yield different open directions (e.g. push and pull) which is confusing even to humans. If trained on door datasets with similar geometry but various open directions, regression models could easily fail to converge. Unlike traditional regression models, diffusion models are good at fitting multi-modal distributions. With manually selected ambiguous datasets, we have shown that diffusion-based methods are capable of preserving multiple possible solutions and have notably outperformed regression methods by a large margin. Currently, we are working on combining this multi-modal predictor with history- and feedback-aware planner to disambiguate the predicted possible actions.
+
+- Developed a generalizable algorithm which plans the ‘open’ action from a pure, single-view RGB observation.
+- Built a simulation environment that can handle simulating manipulation on objects using a suction gripper.
+- Utilized diffusion models to better address ambiguity issues in articulative objects.
 
 The multimodal diffusion process visualization example:
 
