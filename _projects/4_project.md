@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Google Nest Camera Development Software Engineer
+description: NEST, Google
 img:
 importance: 3
 category: fun

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: 6D Object Pose Estimation (Course Project)
+description: <3D Visual Computing>, Tsinghua University
+img: 
 importance: 4
 category: fun
 ---

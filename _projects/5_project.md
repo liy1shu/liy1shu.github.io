@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
+title: 2022 MMGC Contest Organizer and Developer
+description: Tsinghua University
 img: assets/img/1.jpg
 importance: 3
 category: fun

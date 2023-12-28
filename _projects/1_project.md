@@ -1,81 +1,42 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Solving Multimodal Open Action Planning With Diffusion
+description: CMU Robotics Institute
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Investigated on planning to open objects from pure RGB-D observations with diffusion models. Use diffusion model to better represent ambiguity and multimodal action space. Disambiguous diffusion results with history-conditioned structure to predict correct and temporally consistent results.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+While regression models have shown great potential in solving these problems, they have difficulties handling ambiguous datasets. For example, doors with similar geometries could yield different open directions (e.g. push and pull) which is confusing even to humans. If trained on door datasets with similar geometry but various open directions, regression models could easily fail to converge. Unlike traditional regression models, diffusion models are good at fitting multi-modal distributions. With manually selected ambiguous datasets, we have shown that diffusion-based methods are capable of preserving multiple possible solutions and have notably outperformed regression methods by a large margin. Currently, we are working on combining this multi-modal predictor with history- and feedback-aware planner to disambiguate the predicted possible actions.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- Developed a generalizable algorithm which plans the ‘open’ action from a pure, single-view RGB observation.
+- Built a simulation environment that can handle simulating manipulation on objects using a suction gripper.
+- Utilized diffusion models to better address ambiguity issues in articulative objects.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/task.jpeg" title="Real-world Task" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/flow.jpeg" title="flow definition" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/simulation.jpeg" title="Simulation Environment" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    On the left, the real-world task examples. Middle, predicted action flow definition. Right, simulation environment in pybullet.
 </div>
+
+The multimodal diffusion process visualization example:
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/diffusion.jpeg" title="Diffusion Visualization" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    When given a fully closed ambiguous door, the trained diffusion model can make multimodal predictions starting from different random noises.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
