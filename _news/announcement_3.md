@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-07-04 07:59:00-0400
+date: 2024-09-04 20:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Started Summer Research in R-Pad lab! :sparkles: :smile:
+Paper [FlowBotHD](https://flowbothd.github.io/) accepted to CoRL 2024! See you in Munich🎉

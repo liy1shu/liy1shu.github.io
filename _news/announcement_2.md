@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2022-09-28 16:11:00-0400
+date: 2024-08-26 12:00:00-0400
 inline: true
 related_posts: false
 ---
 
-Ended Internship in Google SHA!
+Joining CMU as an Master of Robotics student!
