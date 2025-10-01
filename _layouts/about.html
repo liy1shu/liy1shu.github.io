@@ -15,7 +15,7 @@ layout: default
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
-              {% comment %} --- Start of new hover logic --- {% endcomment %}
+              {% comment %} --- Checks if a hover image is defined --- {% endcomment %}
               {%- if page.profile.image_hover %}
 
                 <style>
@@ -65,7 +65,6 @@ layout: default
               {%- endif %}
             {% endif -%}
 
-            {%- if page.profile.name %}
             {%- if page.profile.more_info %}
             <div class="more-info">
               {{ page.profile.more_info }}
