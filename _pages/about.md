@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Contact:lisa20090127@gmail.com 
-
+subtitle: Contact:yishul@andrew.cmu.edu
 profile:
   align: right
   image: prof_pic.jpg
@@ -22,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 Hi! I'm Yishu Li, I'm a second-year MSR student advised by Professor [David Held](http://davheld.github.io) at Robotics Institute, Carnegie Mellon Univeristy. I graduated from Computer Science and Technology Department in Tsinghua University with a minor in statistics at June 2024. 
 
-My general research interest lies in general manipulation, generative policies, and combining theory with learning algorithms. Specifically, I've been working on adaptive manipulation, making generative policies learn and adapt from history interactions. 
+My general research interest lies in general robot manipulation, generative policies, and combining theory with learning algorithms. Specifically, I've been working on adaptive manipulation, making generative policies learn and adapt from history interactions. 
 
 During undergrad, I had the priviledge of working with Professor [Li Yi](https://ericyi.github.io) on hand-object interaction video understanding, and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) on 3D vision.
 
