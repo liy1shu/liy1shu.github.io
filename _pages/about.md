@@ -25,4 +25,4 @@ My general research interest lies in general robot manipulation, generative poli
 
 During undergrad, I had the priviledge of working with Professor [Li Yi](https://ericyi.github.io) on hand-object interaction video understanding, and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) on 3D vision.
 
-> I am actively seeking PhD opportunities starting in Fall 2026.
+> I'll be joining UC Berkeley this fall for CS PhD advised by Professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/).
