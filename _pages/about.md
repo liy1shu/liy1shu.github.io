@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Contact:yishul@andrew.cmu.edu
+subtitle: Contact:yishul@berkeley.edu
 profile:
   align: right
   image: prof_pic.jpg
