@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I'm Yishu Li (李宜澍), an incoming PhD in Computer Science at UC Berkeley advised by Professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). Previously, I received an M.S. in Robotics at Carnegie Mellon Univeristy, advised by Professor [David Held](http://davheld.github.io). I graduated from Computer Science and Technology Department in Tsinghua University with a minor in statistics at June 2024. 
+Hi! I'm Yishu, a first-year Ph.D. student in Computer Science at UC Berkeley advised by Professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). Previously, I received an M.S. in Robotics at Carnegie Mellon Univeristy, working with Professor [David Held](http://davheld.github.io), a B.Eng. in Computer Science and a B.Sc. in Statistics from Tsinghua University, where I worked with Professor [Li Yi](https://ericyi.github.io) and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm). 
 
-My general research interest lies in general robot manipulation, generative policies, and combining theory with learning algorithms. Specifically, I've been working on adaptive manipulation, making generative policies learn and adapt from history interactions. 
+I'm interested in <strong>adaptive policies</strong> and <strong>meta-learning recipes</strong> for <strong>robotics foundation models</strong>, how agents should <strong>learn from their own interaction histories</strong> to rapidly adapt online.
 
-During undergrad, I had the priviledge of working with Professor [Li Yi](https://ericyi.github.io) on hand-object interaction video understanding, and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) on 3D vision.
+<!-- During undergrad, I had the priviledge of working with Professor [Li Yi](https://ericyi.github.io) on hand-object interaction video understanding, and Professor [Yongjin Liu](http://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) on 3D vision. -->
