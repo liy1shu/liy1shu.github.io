@@ -346,6 +346,24 @@ blockquote {
   }
 }
 
+// Profile links (about page, under the intro)
+
+.profile-links {
+  a {
+    color: var(--global-theme-color);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+
+  .sep {
+    color: var(--global-divider-color);
+    margin: 0 0.4rem;
+  }
+}
+
 // Social (bottom)
 
 .social {
