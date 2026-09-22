@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper [SCOUT](https://anonymousperson12321.github.io/SCOUT/) accepted to CoRL 2026! See you in Austin🍺!
+Paper [SCOUT](https://liy1shu.github.io/SCOUT/) accepted to CoRL 2026! See you in Austin🍺!
