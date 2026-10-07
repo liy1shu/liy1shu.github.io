@@ -1,0 +1,90 @@
+# Photos shown on /gallery/.
+# Put image files in assets/img/gallery/film/ or assets/img/gallery/photo/,
+# then add an entry below. Every field except `image` is optional.
+# While a list is empty, the page shows placeholder frames.
+
+film:
+  - image: gallery/film/berkeley_campus.jpg   # path relative to assets/img/
+    title: Outside Gateway, Berkeley
+    location: Berkeley
+    date: 2026
+    stock: Kodak 400                   # printed on the film edge
+    camera: Canon Autoboy S
+
+  
+  - image: gallery/film/berkeley.jpg   # path relative to assets/img/
+    title: Sather Tower, Berkeley
+    location: Berkeley
+    date: 2026
+    stock: Kodak 400                   # printed on the film edge
+    camera: Canon Autoboy S
+
+  - image: gallery/film/stanford.jpg   # path relative to assets/img/
+    title: Gates Building, Stanford
+    location: Stanford
+    date: 2026
+    stock: Kodak 400                   # printed on the film edge
+    camera: Canon Autoboy S
+  
+photo:
+  - image: gallery/photo/monterey.jpg
+    title: Seagull, Monterey
+    location: Monterey
+    date: 2026
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/sd_choir.jpg
+    title: Seagull Choir, La Jolla
+    location: San Diego
+    date: 2025
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/newyork.jpg
+    title: At Dusk, New York
+    location: New York
+    date: 2025
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/sd_seagull.jpg
+    title: Seagull, La Jolla
+    location: San Diego
+    date: 2025
+    camera: Fujifilm X-S10
+
+
+  - image: gallery/photo/sd_sunset.jpg
+    title: Sunset, La Jolla
+    location: San Diego
+    date: 2025
+    camera: Fujifilm X-S10
+
+
+  # - image: gallery/photo/changsha.jpg
+  #   title: Kai Fu Temple, Changsha
+  #   location: Changsha
+  #   date: 2024
+  #   camera: Fujifilm X-S10
+
+  - image: gallery/photo/yonghe_palace.jpg
+    title: Wish in the Snow, Yonghe Temple
+    location: Beijing
+    date: 2024
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/snowman.jpg
+    title: Snowman, Tsinghua University
+    location: Beijing
+    date: 2023
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/white_tower.jpg
+    title: White Tower, Beijing
+    location: Beijing
+    date: 2023
+    camera: Fujifilm X-S10
+
+  - image: gallery/photo/pku_duck.jpg
+    title: The Duck Thinker, Peking University
+    location: Beijing
+    date: 2023
+    camera: Fujifilm X-S10

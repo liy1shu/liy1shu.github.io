@@ -1,0 +1,224 @@
+/*******************************************************************************
+ * Gallery page (_pages/gallery.html)
+ ******************************************************************************/
+
+.gallery {
+  --film-base: #141210;
+  --film-edge: #e09a4f;
+  --placeholder: rgba(0, 0, 0, 0.045);
+  --placeholder-line: rgba(0, 0, 0, 0.08);
+  margin-top: 1rem;
+}
+
+html[data-theme='dark'] .gallery {
+  --film-base: #0b0a09;
+  --placeholder: rgba(255, 255, 255, 0.04);
+  --placeholder-line: rgba(255, 255, 255, 0.08);
+}
+
+.gallery-index {
+  display: flex;
+  gap: 1.75rem;
+  margin-bottom: 3rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.2s, color 0.2s;
+    &:hover { color: var(--global-theme-color); border-color: currentColor; }
+  }
+  span { color: var(--global-text-color-light); margin-right: 0.35em; }
+}
+
+.gallery-section {
+  margin-bottom: 4.5rem;
+  scroll-margin-top: 5rem;
+}
+
+.gallery-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 1.75rem;
+
+  h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.9rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+.gallery-number,
+.gallery-count {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.gallery-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--global-divider-color);
+  align-self: center;
+}
+
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(135deg, transparent 49.6%, var(--placeholder-line) 50%, transparent 50.4%),
+    var(--placeholder);
+}
+
+/* Film: a horizontal strip with sprocket holes, scrolls sideways */
+
+.film-strip {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  background: var(--film-base);
+  border-radius: 3px;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+.film-frame {
+  --hole: var(--global-bg-color);
+  position: relative;
+  --frame-h: clamp(170px, 26vw, 250px);
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 38px 7px 46px;
+  scroll-snap-align: start;
+  background:
+    linear-gradient(to right, transparent 7px, var(--hole) 7px 17px, transparent 17px) left 10px top 10px / 24px 12px repeat-x,
+    linear-gradient(to right, transparent 7px, var(--hole) 7px 17px, transparent 17px) left 10px bottom 10px / 24px 12px repeat-x;
+
+  /* Same height for every frame; width follows each photo's own shape, no cropping */
+  img,
+  .gallery-placeholder {
+    display: block;
+    height: var(--frame-h);
+    border-radius: 2px;
+  }
+
+  img { width: auto; max-width: none; }
+  .gallery-placeholder { aspect-ratio: 3 / 2; }
+
+  .gallery-placeholder {
+    background:
+      linear-gradient(135deg, transparent 49.7%, rgba(255, 255, 255, 0.06) 50%, transparent 50.3%),
+      #221f1c;
+  }
+
+  img { cursor: zoom-in; filter: saturate(0.95); transition: filter 0.3s; }
+  img:hover { filter: none; }
+
+}
+
+.film-edge {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--film-edge);
+  opacity: 0.85;
+  pointer-events: none;
+
+  b { font-weight: 400; }
+}
+
+/* Photo: airy masonry columns */
+
+.photo-grid {
+  column-count: 3;
+  column-gap: 1.25rem;
+
+  @media (max-width: 900px) { column-count: 2; }
+  @media (max-width: 560px) { column-count: 1; }
+}
+
+.photo-item {
+  break-inside: avoid;
+  margin: 0 0 1.25rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    cursor: zoom-in;
+    transition: opacity 0.3s;
+  }
+  img:hover { opacity: 0.92; }
+
+}
+
+/* Hover caption: location (and optional title / date) over the photo */
+
+.gallery-shot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.gallery-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 2.2rem 0.85rem 0.7rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62), transparent);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-shot:hover .gallery-caption {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-location {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  i { font-size: 0.75em; margin-right: 0.3em; }
+}
+
+.gallery-meta {
+  font-size: 0.72rem;
+  opacity: 0.9;
+}
+
+/* Always white on photos, whatever the site theme */
+.gallery .gallery-caption,
+.gallery .gallery-caption * {
+  color: #fff;
+}
+
+/* Touch screens can't hover, so keep the caption visible there */
+@media (hover: none) {
+  .gallery-caption { opacity: 1; transform: none; }
+}

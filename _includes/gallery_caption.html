@@ -1,0 +1,7 @@
+{%- assign p = include.photo -%}
+{%- if p.location or p.title or p.date -%}
+<figcaption class="gallery-caption">
+  {%- if p.location %}<span class="gallery-location"><i class="fa-solid fa-location-dot"></i> {{ p.location }}</span>{% endif -%}
+  {%- if p.title or p.date %}<span class="gallery-meta">{{ p.title }}{% if p.title and p.date %} · {% endif %}{{ p.date }}</span>{% endif -%}
+</figcaption>
+{%- endif -%}

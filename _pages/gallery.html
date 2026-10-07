@@ -1,0 +1,80 @@
+---
+layout: page
+title: "📷 Gallery 🎞️"
+nav_title: Misc
+permalink: /gallery/
+description: I like to explore photography and film. Welcome to my misc gallery :)
+nav: true
+nav_order: 2
+---
+
+{%- assign film = site.data.gallery.film -%}
+{%- assign photo = site.data.gallery.photo -%}
+
+<div class="gallery">
+
+  <nav class="gallery-index">
+    <a href="#film"><span>01</span> Film</a>
+    <a href="#photo"><span>02</span> Photo</a>
+  </nav>
+
+  <section id="film" class="gallery-section">
+    <header class="gallery-heading">
+      <span class="gallery-number">01</span>
+      <h2>Film</h2>
+      <span class="gallery-rule"></span>
+      <span class="gallery-count">{% if film.size > 0 %}{{ film.size }} frames{% else %}coming soon{% endif %}</span>
+    </header>
+
+    <div class="film-strip">
+      {%- if film.size > 0 -%}
+        {%- for p in film -%}
+        <figure class="film-frame">
+          <div class="gallery-shot">
+            <img src="{{ p.image | prepend: 'assets/img/' | relative_url }}" alt="{{ p.title | default: 'Film photograph' }}" loading="lazy" data-zoomable>
+            {% include gallery_caption.html photo=p %}
+          </div>
+          <span class="film-edge">{{ p.stock | default: 'FILM' | upcase }}<b>▸ {{ forloop.index }}A</b></span>
+        </figure>
+        {%- endfor -%}
+      {%- else -%}
+        {%- for i in (1..6) -%}
+        <figure class="film-frame is-empty">
+          <div class="gallery-placeholder"></div>
+          <span class="film-edge">FILM<b>▸ {{ i }}A</b></span>
+        </figure>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </section>
+
+  <section id="photo" class="gallery-section">
+    <header class="gallery-heading">
+      <span class="gallery-number">02</span>
+      <h2>Photo</h2>
+      <span class="gallery-rule"></span>
+      <span class="gallery-count">{% if photo.size > 0 %}{{ photo.size }} photos{% else %}coming soon{% endif %}</span>
+    </header>
+
+    <div class="photo-grid">
+      {%- if photo.size > 0 -%}
+        {%- for p in photo -%}
+        <figure class="photo-item">
+          <div class="gallery-shot">
+            <img src="{{ p.image | prepend: 'assets/img/' | relative_url }}" alt="{{ p.title | default: 'Photograph' }}" loading="lazy" data-zoomable>
+            {% include gallery_caption.html photo=p %}
+          </div>
+        </figure>
+        {%- endfor -%}
+      {%- else -%}
+        {%- assign ratios = "4/5,3/2,1/1,2/3,3/2,4/5" | split: "," -%}
+        {%- for r in ratios -%}
+        <figure class="photo-item is-empty">
+          <div class="gallery-placeholder" style="aspect-ratio: {{ r }};"></div>
+        </figure>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </section>
+
+</div>
